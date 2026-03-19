@@ -717,6 +717,7 @@ public class LevelPainter implements Runnable {
             switch (orientation) {
                 case TOP:
                 case BOTTOM:
+                    newBalance = newBalance - PreferenceHelper.getOffsetAngle();
                     angle1raw = angle1raw * 0.7f + newBalance * 0.3f;
                     angle1 = Math.abs(angle1raw);
                     angleX = angleX * 0.7f + (Math.sin(Math.toRadians(newBalance)) / MAX_SINUS) * 0.3f;
@@ -727,6 +728,7 @@ public class LevelPainter implements Runnable {
                     angleX = angleX * 0.7f + (Math.sin(Math.toRadians(newRoll)) / MAX_SINUS) * 0.3f;
                 case RIGHT:
                 case LEFT:
+                    newPitch=newPitch + PreferenceHelper.getOffsetAngle();
                     angle1raw = angle1raw * 0.7f + newPitch * 0.3f;
                     angle1 = Math.abs(angle1raw);
                     angleY = angleY * 0.7f + (Math.sin(Math.toRadians(newPitch)) / MAX_SINUS) * 0.3f;

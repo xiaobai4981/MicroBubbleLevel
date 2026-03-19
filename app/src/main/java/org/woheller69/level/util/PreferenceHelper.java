@@ -108,4 +108,8 @@ public class PreferenceHelper {
     public static boolean getSoundEnabled() {
         return getHelperBoolean(PrefKeys.PREF_ENABLE_SOUND, false);
     }
+
+    public static int getOffsetAngle() {
+        return sharedPrefs.getInt("pref_offsetAngle",0);
+    }
 }

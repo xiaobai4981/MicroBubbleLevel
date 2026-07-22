@@ -131,7 +131,7 @@ public class Level extends AppCompatActivity implements OrientationListener {
 
         bipSoundID = soundPool.load(this, R.raw.bip, 1);
         bipRate = getResources().getInteger(R.integer.bip_rate);
-        FreeDroidWarn.showWarningOnUpgrade(this, BuildConfig.VERSION_CODE);
+       // FreeDroidWarn.showWarningOnUpgrade(this, BuildConfig.VERSION_CODE);
     }
 
     @SuppressLint("RestrictedApi")
@@ -238,10 +238,6 @@ public class Level extends AppCompatActivity implements OrientationListener {
             return true;
         } else if (item.getItemId() == R.id.menu_settings) {
             startActivity(new Intent(this, SettingsActivity.class));
-            return true;
-        } else if (item.getItemId() == R.id.menu_about) {
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/woheller69/level")));
-            recreate(); //fix strange action bar position when coming from ruler
             return true;
         } else if (item.getItemId() == R.id.menu_ruler) {
             showRuler(!item.isChecked());

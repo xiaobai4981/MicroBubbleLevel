@@ -11,7 +11,7 @@
         android:name=".LevelApp"
         android:allowBackup="true"
         android:theme="@style/LevelTheme"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon1"
         android:label="@string/name">
 
         <activity

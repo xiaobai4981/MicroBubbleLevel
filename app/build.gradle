@@ -3,22 +3,35 @@ plugins {
 }
 
 android {
-    compileSdk 35
+    compileSdk 36
     namespace 'org.woheller69.level'
     android.buildFeatures.buildConfig true
     defaultConfig {
-        applicationId "org.woheller69.level"
-        minSdk 16
-        targetSdk 35
-        versionCode 34
-        versionName "3.4"
+        applicationId "com.leyou.microbubblelevel"
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
         vectorDrawables.useSupportLibrary true
+    }
+
+    signingConfigs {
+        def keystorePropertiesFiles = rootProject.file("keystore.properties")
+        def keystoreProperties = new Properties()
+        keystoreProperties.load(new FileInputStream(keystorePropertiesFiles))
+        basic {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
     }
 
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.basic
         }
     }
 

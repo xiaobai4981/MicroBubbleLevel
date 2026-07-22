@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name">Φυσαλίδα</string>
+    <string name="name">ΜικροΦυσαλίδαΕπίπεδο</string>
     <string name="reset">Επαναφορά</string>
     <string name="not_supported">Ο προσανατολισμός δεν υποστηρίζεται</string>
     <string name="calibrate">Βαθμονόμηση</string>

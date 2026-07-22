@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name">Niveau</string>
+    <string name="name">Niveau à microbulles</string>
     <string name="reset">Init.</string>
     <string name="not_supported">Orientation non supportée</string>
     <string name="calibrate">Etalonner</string>

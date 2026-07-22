@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name">Bubble</string>
+    <string name="name">MicroBubbleLevel</string>
     <string name="reset">Berrezarri</string>
     <string name="not_supported">Orientazioa ez da onartzen</string>
     <string name="calibrate">Kalibratu</string>

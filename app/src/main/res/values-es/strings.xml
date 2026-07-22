@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name">Nivel</string>
+    <string name="name">Nivel de Microburbujas</string>
     <string name="reset">Inic.</string>
     <string name="not_supported">Orientación incompatibles</string>
     <string name="calibrate">Calibrar</string>

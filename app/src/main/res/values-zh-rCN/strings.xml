@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name">水准仪</string>
+    <string name="name">微型水平仪</string>
     <string name="reset">重置</string>
     <string name="not_supported">不支持定向</string>
     <string name="calibrate">校准</string>

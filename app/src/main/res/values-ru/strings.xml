@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name">Пузырёк</string>
+    <string name="name">МикроПузырьковыйУровень</string>
     <string name="reset">Сброс</string>
     <string name="not_supported">Ориентация не поддерживается</string>
     <string name="calibrate">Калибровка</string>

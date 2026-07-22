@@ -21,9 +21,4 @@
         android:title="@string/preferences"
         app:showAsAction="never" />
 
-    <item
-        android:id="@+id/menu_about"
-        android:icon="@drawable/ic_info"
-        android:title="GitHub"
-        app:showAsAction="never"/>
 </menu>
